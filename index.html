@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivetha's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: white;
+      animation: backgroundAnimation 15s infinite alternate;
+      background: linear-gradient(45deg, green, blue, purple, orange, red);
+      background-size: 400% 400%;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      25% {
+        background-position: 50% 100%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      75% {
+        background-position: 50% 0%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 100, 0, 0.7);
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: rgba(34, 139, 34, 0.7);
+      border-radius: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    button {
+      background-color: rgba(0, 100, 0, 0.8);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgba(0, 70, 0, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Nivetha R's Portfolio</h1>
+    <p>Welcome to my personal portfolio!</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Nivetha R from the BCA department at MMES WOMEN'S ART'S AND SCIENCE COLLEGE, Melvisharam. I love coding and learning new technologies!</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML - Structuring web pages</li>
+      <li>CSS - Styling and designing web content</li>
+      <li>JavaScript - Adding interactivity and dynamic features</li>
+      <li>Responsive Design - Making websites look good on all devices</li>
+      <li>Problem Solving - Debugging and improving code</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of Computer Applications (BCA)</li>
+      <li>MMES WOMEN'S ART'S AND SCIENCE COLLEGE, Melvisharam</li>
+      <li>Learning web development, programming, and computer applications</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Dancing</li>
+      <li>Reading</li>
+      <li>Writing</li>
+      <li>Travelling</li>
+      <li>Listening to Music</li>
+      <li>Cooking</li>
+    </ul>
+  </section>
+
+  <section id="interactive">
+    <h2>Interact with Me!</h2>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </section>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').textContent = "Thank you for visiting my portfolio!";
+    }
+  </script>
+
+</body>
+
+</html>
